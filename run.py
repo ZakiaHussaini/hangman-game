@@ -52,3 +52,13 @@ class Hangman():
         not number or text with more than 1 char
         """
         return input_.isdigit() or (input_.isalpha() and len(input_) > 1)
+
+    def print_game_status(self):
+        """
+        this method print blankspaces to word for guessing with remaining 
+        attempts and guessed letters
+        """
+        print('\n')
+        print('\n'.join(HANGMAN[:self.wrong_attempts]))
+        print('\n')
+        print(' '.join(self.game_completion))
