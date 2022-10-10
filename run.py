@@ -39,3 +39,10 @@ class Hangman():
         self.guess = guess
         self.game_completion = list('_' * len(self.guess))
 
+     def find_indexes(self, letter):
+        """
+        this method take a letter and return a list with its index in the 
+        word to guess.
+        """
+        return [i for i, char in enumerate(self.guess) if letter == char]
+
