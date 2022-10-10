@@ -5,11 +5,13 @@ Hangman is a python terminal game, which runs in the Code Institute mock termina
 ## Features
 - have a "Hangman" representation at the beginning of the game
 - it has text file including all the words. 
+
   ![hangman image](images/hangman.JPG)
 
 - display step by step the hangman by every wrong attempt
 - If the player makes a wrong guess, the number of chances decreases by one, and the wrong guess is saved.
 - If the player makes a right guess, the dashes which correspond to that guess get replaced with that guess and the guess is saved with no reduction in the number of chances.
+
    ![wrong attempt image](images/wrong.JPG)
 
 - alow repeated play with a fresh word
@@ -18,6 +20,7 @@ Hangman is a python terminal game, which runs in the Code Institute mock termina
    ![play again image](images/again.JPG)
 
 - limit the number of guesses per word
+
    ![spaces image](images/size.JPG)
 
 # Data Model
