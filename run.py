@@ -75,5 +75,38 @@ class Hangman():
         user_input = input('\nPlease type a letter: ')
         return user_input
 
+    def play(self):
+        """
+        this method prompt the user for a letter and plays the game until
+        the user guesses the word or lose his attempts
+        
+        """
+        while self.wrong_attempts <= len(HANGMAN):
+            self.print_game_status()
+            user_input = self.get_user_input()
+
+            # Validate the user input
+            if self.is_invalid_letter(user_input):
+                print('¡The input is not a letter!')
+                continue
+            # Check if the letter is not already guessed
+            if user_input in self.game_completion:
+                print('You already have guessed that letter')
+                continue
+
+            if user_input in self.guess:
+                indexes = self.find_indexes(user_input)
+                self.update_progress(user_input, indexes)
+                # If there is no letter to find in the word
+                if self.game_completion.count('_') == 0:
+                    print('\nCongrats, you guessed the word! You win!')
+                    print('The word is: {0}'.format(self.guess))
+                    quit()
+            else:
+                self.wrong_attempts += 1
+        print("\nOMG! You lost!")
+        print('The word is: {0}'.format(self.guess))
+
+
     
 
