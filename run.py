@@ -27,3 +27,15 @@ HANGMAN = [
     '|       |',
     '|      / \ '
 ]
+
+
+class Hangman():
+    """
+    The hangman game class and it's methods.
+    """
+
+    def __init__(self, guess):
+        self.wrong_attempts = 0
+        self.guess = guess
+        self.game_completion = list('_' * len(self.guess))
+
