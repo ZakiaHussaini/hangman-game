@@ -62,3 +62,12 @@ class Hangman():
         print('\n'.join(HANGMAN[:self.wrong_attempts]))
         print('\n')
         print(' '.join(self.game_completion))
+    
+    def update_progress(self, letter, indexes):
+        """
+        this method update the game progress with guessed letters
+
+        """
+        for index in indexes:
+            self.game_completion[index] = letter
+
