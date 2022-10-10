@@ -16,7 +16,7 @@ Hangman is a python terminal game, which runs in the Code Institute mock termina
 
 - alow repeated play with a fresh word
 - If the player uses all of his chances and is still unable to guess the word then it’s game over and ask the user to play again
--If the player is able to guess the word correctly then he/she wins the game.
+- If the player is able to guess the word correctly then he/she wins the game.
 
    ![play again image](images/again.JPG)
 
@@ -25,7 +25,7 @@ Hangman is a python terminal game, which runs in the Code Institute mock termina
    ![spaces image](images/size.JPG)
 
 # Data Model
-In this game I used lists to display hangman when user type wrong character, the game create one instance of the Hangman class to display the user the hangman game. the class also has method to help play the game, such as print method to display the hangman and remaining chance to play. 
+In this game I used lists to display hangman when user type wrong character. the game create one instance of the Hangman class to display the user the hangman game. the class also has method to help play the game, such as print method to display the hangman and remaining chance to play. 
 
 
 # Testing
