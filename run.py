@@ -108,5 +108,16 @@ class Hangman():
         print('The word is: {0}'.format(self.guess))
 
 
+while True: 
+    if __name__ == '__main__':
+        guess = random.choice(word_list)
+        hangman = Hangman(guess)
+        hangman.play()
+        response = input('Do you want to play again? ').lower()
+        if response == 'no':
+            break
+      
+
+
     
 
