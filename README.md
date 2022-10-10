@@ -17,6 +17,7 @@ Hangman is a python terminal game, which runs in the Code Institute mock termina
 - alow repeated play with a fresh word
 - If the player uses all of his chances and is still unable to guess the word then it’s game over and ask the user to play again
 -If the player is able to guess the word correctly then he/she wins the game.
+
    ![play again image](images/again.JPG)
 
 - limit the number of guesses per word
