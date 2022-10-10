@@ -1,31 +1,56 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# HANGMAN Game
+Hangman is a python terminal game, which runs in the Code Institute mock terminal on Heroku.This game is about guessing letters (A-Z) to form the words. If the player guesses the right letter that is within the word, the letter appears at its correct position. The user has to guess the correct word until a man is hung, then the game is over.
 
-Welcome ZakiaHussaini,
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## Features
+- have a "Hangman" representation at the beginning of the game
+- it has text file including all the words. 
+  ![hangman image](images/hangman.JPG)
 
-## Reminders
+- display step by step the hangman by every wrong attempt
+- If the player makes a wrong guess, the number of chances decreases by one, and the wrong guess is saved.
+- If the player makes a right guess, the dashes which correspond to that guess get replaced with that guess and the guess is saved with no reduction in the number of chances.
+   ![wrong attempt image](images/wrong.JPG)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+- alow repeated play with a fresh word
+- If the player uses all of his chances and is still unable to guess the word then it’s game over and ask the user to play again
+-If the player is able to guess the word correctly then he/she wins the game.
+   ![play again image](images/again.JPG)
 
-## Creating the Heroku app
+- limit the number of guesses per word
+   ![spaces image](images/size.JPG)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+# Data Model
+In this game I used lists to display hangman when user type wrong character, the game create one instance of the Hangman class to display the user the hangman game. the class also has method to help play the game, such as print method to display the hangman and remaining chance to play. 
 
-1. `heroku/python`
-2. `heroku/nodejs`
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+# Testing
+I have manually tested this project by doing the following:
+- passed the code through a PEP8 and confirmed there are no problems.
+- Tested in my local terminal and Code Institute Heroko terminal
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Validator Testing
+- PEP8 
+  - No error were found from PEP8online.com
 
-Connect your GitHub repository and deploy as normal.
+# Deployment
+this project was deployed using Code Institute's mock terminal for Heroku.
 
-## Constraints
+- Steps for deplpyment:
+  - create this repository
+  - create a new Heroku app
+  - set the buildbacks to Python and NodeJs in that order
+  - link the Heroku app to the repository
+  - click on Deploy
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+# Credits
+- Code Institute for the deployment terminal
+- Wikipedia for the details of the Hangman game
 
------
-Happy coding!
+ 
+
+
+
+
+
+
