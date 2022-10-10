@@ -71,3 +71,9 @@ class Hangman():
         for index in indexes:
             self.game_completion[index] = letter
 
+    def get_user_input(self):
+        user_input = input('\nPlease type a letter: ')
+        return user_input
+
+    
+
